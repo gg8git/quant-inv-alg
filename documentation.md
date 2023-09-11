@@ -35,6 +35,15 @@ At the end of the semester, models will be evaluated based on their week-on-week
 
 ## Organization
 
+## Leo Random Notes on Quants
+1. Recognize what is a risk-premium strategy vs. a risk-neutral strategy. This is important at the initial modeling/researching stage of the ML.
+2. Sharpe ratio of a portfolio is a good indicator, but always keep in mind CAGR is the main value that drives growth. And in most cases, a max-sharpe portfolio != max-CAGR portfolio
+3. In-sample vs Out-of-Sample data. Can we always trust the data? Where do we receive the data from? All pretty important question to keep in mind
+4. Static vs. Dynamic portfolio. Obviously we are doing a dynamic portfolio with rebalancing. Thus frequency will be the key to determine: how often do we want the system to recheck for rebalancing? What is the threshold for trade initiation? (e.g. when expected return > expected trading cost, or to adjust certain correlation breaks)
+5. Portfolio construction thought process. This doesn't just apply to quant but portfolio management in general. Start by establish our policies and asset classes (in this case, mostly US/non-US ETFs/Indices). Then we can do the selection process (which is similar to the experience at fusion). And then it's the signaling production (modeling/researching) phase of quant. And then lastly is portfolio rebalancing alongside with continuous research (in case we want to add/remove assets in the portfolio)
+6. By momentum trading I'm always a bit doubtful...but I think we can/have to extent our time series to a longer time frame (e.g. at least 2 weeks-1 months trailing) or else we don't have enough accurate data at the second/minute level (and it's mad expensive to get those data)
+7. I gotta catch a flight nowwwww but I'll add more!
+
 ### Files
 
 1. data.py - getting and formatting historical data from yfinance library
