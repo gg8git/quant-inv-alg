@@ -47,10 +47,11 @@ At the end of the semester, models will be evaluated based on their week-on-week
 
 ### Libraries to Use
 
-1. OpenBB SDK - api accessing general-purpose terminal for financial data
+install libraries in miniconda virtual environment
+1. OpenBB SDK - api accessing general-purpose terminal for financial data (look at https://docs.openbb.co/sdk/usage/basics)
 2. ta-lib - library of technical indicators
-3. VectorBT - library to backtest and train solutions
-4. alpaca-trade-api - api to trade with alpaca broker (can look at other trading platforms as well)
+3. VectorBT - library to backtest and train solutions (look at https://vectorbt.dev/api/ and https://www.youtube.com/watch?v=GowmmrSMw9I)
+4. alpaca-trade-api - api to trade with alpaca broker (currently being deprecated and transferred to alpaca-py? must think about this)
 
 ### Files
 
