@@ -23,7 +23,7 @@ The machine learning models are as follows:
 5. Semantic News Trading - changing portfolio allocations based on the valence of news surrounding different companies
 6. General ML Trading Models - feeding arbitrary historical data into ml models to see what they learn
 
-Backtesting and validation to compare the efficacy of different models will be done by using walk-forward-optimization over the past 7 years, with each optimization phase being 24 months and each validation phase being 6 months. During each validation phase, models will be assessed by vectorbt's total_return function. Details for how this should be done can be found in https://github.com/polakowo/vectorbt/blob/master/examples/WalkForwardOptimization.ipynb.
+Backtesting and validation to compare the efficacy of different models will be done by using walk-forward-optimization over the past 7 years, with each optimization phase being 24 months and each validation phase being 6 months. During each validation phase, models will be assessed by vectorbt's total_return function. Details for how this should be done can be found in https://github.com/polakowo/vectorbt/blob/master/examples/WalkForwardOptimization.ipynb. More information on the theoretical logic behind walk-forward optimization can be found in https://www.youtube.com/watch?v=WBZ_Vv-iMv4. 
 
 
 ### Indexes to Observe
