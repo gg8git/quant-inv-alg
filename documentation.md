@@ -16,6 +16,7 @@ Our baseline model will be centered around a fixed portfolio oriented around the
 The rest of the models will abide by a fixed volatility, determined by the portfolio volatility equation (square root of portfolio variance), and then use various machine learning models to optimize returns.
 
 The machine learning models are as follows:
+1. Mean Reversion Trading - changing allocation to sell stock when price is above historical average and buy stock when price is under historical average
 1. Moving Average Trading - changing portfolio allocations based on patterns discovered within short-term changes in average closing price
 2. Cross-Sectional Momentum Trading - changing portfolio allocations by selling negative-trending stocks and buying positive-trending stocks based on their relative performance to other investments
 3. Time-Series Momentum Trading - changing portfolio allocations by selling negative-trending stocks and buying positive-trending stocks based on their absolute performance
@@ -58,10 +59,12 @@ install libraries in miniconda virtual environment
 
 ### Files
 
+(not updates: will come back and change when everything is done)
+
 1. data.py - getting and formatting historical data from yfinance library
 2. tests.py - getting current data in order to test different models
 3. trading.py - running all the trading models
-4. baseline-trading.py - trading model based on kelly fraction strategy
+4. reversion-trading.py - trading model based on mean reversion strategy
 5. average-trading.py - trading model based on moving average strategy
 6. xs-momentum-trading.py - trading model based on cross-sectional momentum strategy
 7. ts-momentum-trading.py - trading model based on time-series momentum strategy
